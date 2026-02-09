@@ -1,0 +1,8 @@
+Running altool at path '/Applications/Xcode_16.4.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Frameworks/AppStoreService.framework/Support/altool'...
+2026-02-09 11:44:53.386  INFO: [altool.6000028501C0] [ContentDelivery.Uploader.6000028501C0] 
+==========================================
+UPLOAD SUCCEEDED with 0 warnings, 0 messages
+Delivery UUID: 8bd2729b-8c76-43c9-9d98-2ba5f6b8c09c
+Transferred 2671218 bytes in 0.082 seconds (32.6MB/s)
+==========================================
+No errors uploading 'Timestamp_Camera.ipa/Timestamp_Camera.ipa'
