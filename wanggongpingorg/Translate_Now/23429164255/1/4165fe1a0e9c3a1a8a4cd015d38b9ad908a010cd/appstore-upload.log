@@ -1,0 +1,22 @@
+Running altool at path '/Applications/Xcode_16.4.app/Contents/SharedFrameworks/ContentDeliveryServices.framework/Frameworks/AppStoreService.framework/Support/altool'...
+2026-03-23 08:59:17.823 ERROR: [altool.600001FCC1C0] [ContentDelivery.Uploader.600001FCC1C0] Validation failed (409) Invalid Pre-Release Train. The train version '1.0.1' is closed for new build submissions (ID: ed14f6ef-a637-43c3-b6fa-5e33782223b7)
+2026-03-23 08:59:17.823 ERROR: [altool.600001FCC1C0] [ContentDelivery.Uploader.600001FCC1C0] Validation failed (409) This bundle is invalid. The value for key CFBundleShortVersionString [1.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.1]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 2e2d5254-5e9e-407c-8ec3-dd298bf1757f)
+2026-03-23 08:59:30.180  INFO: [altool.600001FCC1C0] [ContentDelivery.Uploader.600001FCC1C0] 
+=======================================
+UPLOAD FAILED with 2 errors, 0 warnings, 0 messages
+=======================================
+2026-03-23 08:59:30.184 ERROR: [altool.600001FCC1C0] Error uploading 'Translate_Now.ipa/Translate_Now.ipa'.
+2026-03-23 08:59:30.184 ERROR: [altool.600001FCC1C0] Validation failed Invalid Pre-Release Train. The train version '1.0.1' is closed for new build submissions (ID: ed14f6ef-a637-43c3-b6fa-5e33782223b7) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "Invalid Pre-Release Train. The train version '1.0.1' is closed for new build submissions (ID: ed14f6ef-a637-43c3-b6fa-5e33782223b7)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=Invalid Pre-Release Train. The train version '1.0.1' is closed for new build submissions, id=ed14f6ef-a637-43c3-b6fa-5e33782223b7, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=Invalid Pre-Release Train. The train version '1.0.1' is closed for new build submissions, NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}
+2026-03-23 08:59:30.184 ERROR: [altool.600001FCC1C0] Validation failed This bundle is invalid. The value for key CFBundleShortVersionString [1.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.1]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 2e2d5254-5e9e-407c-8ec3-dd298bf1757f) (409)
+ {
+    NSLocalizedDescription = "Validation failed";
+    NSLocalizedFailureReason = "This bundle is invalid. The value for key CFBundleShortVersionString [1.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.1]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 2e2d5254-5e9e-407c-8ec3-dd298bf1757f)";
+    NSUnderlyingError = "Error Domain=IrisAPI Code=-19241 \"Validation failed\" UserInfo={status=409, detail=This bundle is invalid. The value for key CFBundleShortVersionString [1.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.1]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring, id=2e2d5254-5e9e-407c-8ec3-dd298bf1757f, code=STATE_ERROR.VALIDATION_ERROR, title=Validation failed, NSLocalizedFailureReason=This bundle is invalid. The value for key CFBundleShortVersionString [1.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.1]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring, NSLocalizedDescription=Validation failed}";
+    "iris-code" = "STATE_ERROR.VALIDATION_ERROR";
+}
