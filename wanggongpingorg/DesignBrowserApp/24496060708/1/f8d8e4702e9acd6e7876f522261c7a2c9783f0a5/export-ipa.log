@@ -1,0 +1,4 @@
+2026-04-16 06:43:09.038 xcodebuild[22393:64435] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/tb/y368xp_x10s3ty1b_mtl5mxr0000gn/T/DesignBrowserApp_2026-04-16_06-43-09.031.xcdistributionlogs".
+Exported DesignBrowserApp to: /Users/runner/work/DesignBrowserApp/DesignBrowserApp/DesignBrowserApp.ipa
+** EXPORT SUCCEEDED **
+
