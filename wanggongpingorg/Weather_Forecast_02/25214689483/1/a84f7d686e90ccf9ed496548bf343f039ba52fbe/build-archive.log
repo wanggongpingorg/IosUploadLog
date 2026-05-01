@@ -1,0 +1,68 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./WeatherForecast.xcworkspace -scheme WeatherForecast -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/build.xcarchive
+
+2026-05-01 12:44:33.273 xcodebuild[2150:10099] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'WeatherForecast' in project 'WeatherForecast'
+        ➜ Implicit dependency on target 'Pods-WeatherForecast' in project 'Pods' via file 'Pods_WeatherForecast.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'PMKit' in project 'Pods' via options '-framework PMKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-WeatherForecast' in project 'Pods'
+        ➜ Explicit dependency on target 'PMKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'PMKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/WeatherForecast/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 4e3bc3c49ecb74efa8bcba39fe607cde
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/WeatherForecast-exhevmcsrdmuavbhxvrycaqrvwaa/Build/Intermediates.noindex/ArchiveIntermediates/WeatherForecast/IntermediateBuildFilesPath/XCBuildData/4e3bc3c49ecb74efa8bcba39fe607cde.xcbuilddata
+/Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 26.2.99. (in target 'UMAPM' from project 'Pods')
+/Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 26.2.99. (in target 'UMDevice' from project 'Pods')
+/Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/Pods/Pods.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 9.0, but the range of supported deployment target versions is 12.0 to 26.2.99. (in target 'UMCommon' from project 'Pods')
+/Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/WeatherForecast.xcodeproj: error: Provisioning profile "appstore-6760691310-20260501124404060" doesn't include the WeatherKit capability. (in target 'WeatherForecast' from project 'WeatherForecast')
+/Users/runner/work/Weather_Forecast_02/Weather_Forecast_02/WeatherForecast.xcodeproj: error: Provisioning profile "appstore-6760691310-20260501124404060" doesn't include the com.apple.developer.weatherkit entitlement. (in target 'WeatherForecast' from project 'WeatherForecast')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace WeatherForecast with scheme WeatherForecast
+(1 failure)
